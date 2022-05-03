@@ -1,3 +1,4 @@
+import { useState } from "react";
 // import "bootstrap/dist/css/bootstrap.min.css";
 import "./styles/bootstrap.darkly.min.css";
 // import "./styles/bootstrap.morph.min.css";
@@ -5,24 +6,27 @@ import "./styles/bootstrap.darkly.min.css";
 import { Container, Button, Card } from "react-bootstrap";
 import { Employees } from "./components/Employees";
 import { Customers } from "./components/Customers";
-import { useState } from "react";
 
 function App() {
-  const [mode, setMode] = useState("Employees");
+  const [currentPage, setCurrentPage] = useState("employees");
 
   return (
     <div className="App">
       <Container>
         <h1>Company Site</h1>
-        <Button onClick={() => setMode("Employees")} className="me-1">
+        <Button onClick={() => setCurrentPage("employees")} className="me-1">
           Employees
         </Button>
-        <Button onClick={() => setMode("Customers")} className="btn-success">
+        <Button
+          onClick={() => setCurrentPage("customers")}
+          className="btn-success"
+        >
           Customers
         </Button>
         <Card className="mt-2">
           <Card.Body>
-            {mode === "Employees" ? <Employees /> : <Customers />}
+            {currentPage === "employees" && <Employees />}
+            {currentPage === "customers" && <Customers />}
           </Card.Body>
         </Card>
       </Container>
