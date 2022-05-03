@@ -1,13 +1,14 @@
 import "bootstrap/dist/css/bootstrap.min.css";
+import { Container, Button } from "react-bootstrap";
 
 function App() {
   return (
     <div className="App">
-      <div className="container">
+      <Container>
         <h1>Company Site</h1>
-        <button className="btn-primary me-1">Employees</button>
-        <button className="btn-success">Customers</button>
-      </div>
+        <Button className="me-1">Employees</Button>
+        <Button className="me-1">Customers</Button>
+      </Container>
     </div>
   );
 }
