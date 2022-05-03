@@ -3,7 +3,7 @@ import { Carousel } from "react-bootstrap";
 
 export const Employees = () => {
   return (
-    <>
+    <div className="mt-2">
       <h2>Employees</h2>
       <p>This is the employees page.</p>
       <Carousel style={{ width: "300px" }}>
@@ -23,6 +23,6 @@ export const Employees = () => {
           );
         })}
       </Carousel>
-    </>
+    </div>
   );
 };
