@@ -10,20 +10,20 @@ import { useState } from "react";
 function App() {
   const [mode, setMode] = useState("Employees");
 
-  const handleEmployeeButtonClick = () => {
-    setMode("Customers");
-  };
-  const handleCustomerButtonClick = () => {
-    setMode("Employees");
-  };
+  // const handleEmployeeButtonClick = () => {
+  //   setMode("Customers");
+  // };
+  // const handleCustomerButtonClick = () => {
+  //   setMode("Employees");
+  // };
   return (
     <div className="App">
       <Container>
         <h1>Company Site</h1>
-        <Button onClick={handleEmployeeButtonClick} className="me-1">
+        <Button onClick={() => setMode("Employees")} className="me-1">
           Employees
         </Button>
-        <Button onClick={handleCustomerButtonClick} className="btn-success">
+        <Button onClick={() => setMode("Customers")} className="btn-success">
           Customers
         </Button>
         <Card className="mt-2">
