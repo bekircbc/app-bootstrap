@@ -1,10 +1,10 @@
 function App() {
   return (
     <div className="App">
-      <div>
+      <div className="container">
         <h1>Company Site</h1>
-        <button>Employees</button>
-        <button>Customers</button>
+        <button className="btn-primary me-1">Employees</button>
+        <button className="btn-primary">Customers</button>
       </div>
     </div>
   );
