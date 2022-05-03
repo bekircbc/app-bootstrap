@@ -12,7 +12,7 @@ export const Employees = () => {
             <Carousel.Item>
               <img
                 className="d-block w-100"
-                src={`images/employees/employee_${emp.employeeID}.jpg`}
+                src={`public/images/employee_${emp.employeeID}.jpg`}
               />
               <Carousel.Caption>
                 <div>
