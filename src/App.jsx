@@ -10,12 +10,6 @@ import { useState } from "react";
 function App() {
   const [mode, setMode] = useState("Employees");
 
-  // const handleEmployeeButtonClick = () => {
-  //   setMode("Customers");
-  // };
-  // const handleCustomerButtonClick = () => {
-  //   setMode("Employees");
-  // };
   return (
     <div className="App">
       <Container>
