@@ -23,7 +23,7 @@ function App() {
         >
           Customers
         </Button>
-        <Card className="mt-2">
+        <Card className="mt-2 w-60">
           <Card.Body>
             {currentPage === "employees" && <Employees />}
             {currentPage === "customers" && <Customers />}
